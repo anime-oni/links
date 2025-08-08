@@ -4,19 +4,27 @@
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
+
 body {
-  background: #f2f3fb;
+  background: #121212; /* Dark background */
   width: 100%;
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
+  color: #e0e0e0; /* Light text color for general text */
 }
+
+/* Hide scrollbar for WebKit browsers */
 body::-webkit-scrollbar {
   display: none;
 }
+
+/* Links */
 a {
-  color: #343b45;
+  color: #80cbc4; /* Light cyan for links */
   text-decoration: none;
 }
+
+/* Lists */
 ul {
   list-style-type: none;
 }
@@ -27,6 +35,8 @@ ul {
   margin: auto;
   width: 85%;
 }
+
+/* Container */
 .container {
   text-align: center;
   display: flex;
@@ -40,7 +50,7 @@ ul {
 .picture {
   height: 9rem;
   width: 9rem;
-  background-color: #52c8ff;
+  background-color: #52c8ff; /* Keep as is or change for contrast */
   border-radius: 100%;
   overflow: hidden;
 }
@@ -53,7 +63,7 @@ ul {
   font-size: 2rem;
   letter-spacing: 1.5px;
   font-weight: bold;
-  color: #00445a;
+  color: #ffffff; /* Light color for name text */
 }
 
 /**On load name effect**/
@@ -88,15 +98,16 @@ ul {
 /*****Few personal details*****/
 .info-box {
   width: 100%;
-  background-color: #f5f5fc;
+  background-color: #1e1e1e; /* Dark background for info box */
   border-radius: 0.5rem;
-  border: 2px solid #343b45;
+  border: 2px solid #444; /* Slightly lighter border for contrast */
   padding: 1rem 0;
   height: 3.45rem;
   overflow: hidden;
   position: relative;
+  color: #ccc; /* Light text color */
 }
-/*if toggle btn click then add .active*/
+/* Toggle button */
 .info-box .toggle {
   padding: 0.94rem;
   width: 100%;
@@ -106,13 +117,15 @@ ul {
   font-size: 1.3rem;
   top: 0;
   right: 0;
+  color: #ccc; /* Light color for toggle icon */
 }
 .info-box.active {
   height: auto;
   padding-bottom: 0;
   overflow: visible;
 }
-/***toggle button rotate on click***/
+
+/* Toggle icon rotation */
 .info-box .toggle i {
   float: right;
   transition: 0.25s;
@@ -124,7 +137,7 @@ ul {
 
 /***details***/
 .details {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #444; /* Dark border for details */
   width: 95%;
   margin: auto;
 }
@@ -135,11 +148,11 @@ ul {
   text-align: left;
 }
 .details ul li {
-  color: #4b4c4f;
+  color: #ccc; /* Light text */
   padding: 0.5rem;
 }
 .details b {
-  color: #00445a;
+  color: #80cbc4; /* Bright accent color for labels */
   letter-spacing: 1.3px;
 }
 .details .about {
@@ -154,14 +167,15 @@ ul {
 .project {
   display: flex;
   align-items: center;
-  border-bottom: 1.5px solid #0000001a;
+  border-bottom: 1.5px solid #444; /* Darker border */
   padding: 0;
   text-decoration: none;
+  color: #fff; /* Ensure link text is visible */
 }
 
 .project i {
   font-size: 2rem;
-  color: #26caff;
+  color: #26caff; /* Keep as is or adjust if needed */
 }
 
 .project ul {
@@ -176,7 +190,7 @@ ul {
   display: inline-block;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #000;
+  color: #ccc; /* Light text for list items */
 }
 
 .project ul small {
@@ -193,18 +207,19 @@ ul {
   margin: 1rem 0;
   border-radius: 0.5rem;
   backdrop-filter: blur(10px);
-  border: 2px solid #343b45;
-  background-color: #f5f5fc;
+  border: 2px solid #444; /* Darker border for contrast */
+  background-color: #2c2c2c; /* Dark background for buttons */
   padding: 1rem 0;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
+  color: #ccc; /* Light text for icons/text inside buttons */
 }
 .social-media div:hover {
   color: #ffffff;
-  background-color: #343b45;
+  background-color: #444; /* Slightly lighter on hover */
 }
 
 /***responsive for desktop***/
